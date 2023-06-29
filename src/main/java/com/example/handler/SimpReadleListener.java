@@ -19,7 +19,7 @@ public class SimpReadleListener extends AnalysisEventListener<FillData> {
         int currentHeadRowNumber = context.readSheetHolder().getHeadRowNumber();
         if (currentHeadRowNumber == rowIndex + 1) {
             //表头触发 表头国际化转换
-//            ExcelUtil.buildUpdateHeadAgain(context,headMap,FillData.class);
+            ExcelUtil.buildUpdateHeadAgain(context,headMap,FillData.class);
         }
     }
 
