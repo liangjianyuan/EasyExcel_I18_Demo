@@ -9,7 +9,7 @@ import com.example.vo.FillData;
 
 import java.util.Map;
 
-public class SimpReadleListener extends AnalysisEventListener<FillData> {
+public class SimpleReadleListener extends AnalysisEventListener<FillData> {
 
 
     @Override

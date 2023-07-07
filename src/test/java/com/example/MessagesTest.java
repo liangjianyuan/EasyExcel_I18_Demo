@@ -2,7 +2,7 @@ package com.example;
 
 import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.write.builder.ExcelWriterBuilder;
-import com.example.handler.SimpReadleListener;
+import com.example.handler.SimpleReadleListener;
 import com.example.util.ExcelUtil;
 import com.example.vo.FillData;
 
@@ -28,7 +28,7 @@ public class MessagesTest {
         LocaleContextHolder.setLocale(Locale.JAPAN);
         String fileName = "D://ユーザデータ .xlsx";
         //在读取时重新构建表头
-        EasyExcel.read(fileName, FillData.class, new SimpReadleListener()).sheet().doRead();
+        EasyExcel.read(fileName, FillData.class, new SimpleReadleListener()).sheet().doRead();
     }
 
     @Test
